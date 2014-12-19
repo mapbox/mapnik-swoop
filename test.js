@@ -44,8 +44,7 @@ function run(name, command,args,opts,cb) {
     });
 }
 
-//var apps = package_json.dependencies;
-var apps = {'tilelive-vector':''};
+var apps = package_json.dependencies;
 
 process.env.NODE_PATH = '/Users/dane/projects/node-mapnik/lib/'
 
