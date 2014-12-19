@@ -1,5 +1,5 @@
 var assert = require('assert');
-var cp = require('child_process')
+var cp = require('child_process');
 var path = require('path');
 var package_json = require('./package.json');
 var existsSync = require('fs').existsSync || require('path').existsSync;
@@ -44,9 +44,34 @@ function run(name, command,args,opts,cb) {
     });
 }
 
-var apps = package_json.dependencies;
+var count_module = function (name, callback) {
+    var cmd = 'npm ls ' + name;
+    cp.exec(cmd,
+        function (error, stdout, stderr) {
+            var pattern = new RegExp(name + '@', 'g');
+            var match = stdout.match(pattern);
+            if (!match) {
+                return callback(null, 0);
+            }
+            return callback(null, match.length);
+        });
+};
 
-process.env.NODE_PATH = '/Users/dane/projects/node-mapnik/lib/'
+describe('Duplicate modules', function () {
+    ['mapnik'].forEach(function (mod) {
+        it('there should only be one ' + mod + ' module otherwise you are asking for pwnage', function (done) {
+            this.timeout(4000);
+            count_module(mod, function (err, count) {
+                if (err) throw err;
+                assert.notEqual(count, 0, 'you are missing the ' + mod + ' module (`npm ls ' + mod + '`)');
+                assert.equal(count, 1, 'you have more than one copy of ' + mod + ' (`npm ls ' + mod + '`)');
+                done();
+            });
+        });
+    });
+});
+
+var apps = package_json.dependencies;
 
 describe('Dependents', function() {
     Object.keys(apps).forEach(function(app) {

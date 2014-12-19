@@ -10,7 +10,8 @@ before_install:
 
 install:
 - npm install --loglevel=http --fallback-to-build=false --no-rollback
-- for i in $(ls node_modules/); do (cd node_modules/$i && npm install $(node -e "console.log(Object.keys(require('./package.json').devDependencies).join(' '))")); done
+- for i in $(ls node_modules/); do (cd node_modules/$i && npm install $(node -e "console.log(Object.keys(require('./package.json').devDependencies).join(' '))")); done || true
+- (cd node_modules/mapnik-omnivore && npm install http://mapbox-npm.s3.amazonaws.com/package/mapnik-test-data-2.0.3-fece0a9c546074a1479e9eae2333184029bb2279.tgz)
 
 before_script:
 - npm ls mapnik
