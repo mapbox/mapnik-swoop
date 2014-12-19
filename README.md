@@ -6,7 +6,7 @@ https://www.npmjs.com/browse/depended/mapnik
 
 
  - node-mapnik - [![Build Status](https://secure.travis-ci.org/mapnik/node-mapnik.png)](http://travis-ci.org/mapnik/node-mapnik)
-  - abaculus - [![Build Status](https://secure.travis-ci.org/mapbox/abaculus.png)](http://travis-ci.org/mapbox/abaculus)
+ - abaculus - [![Build Status](https://secure.travis-ci.org/mapbox/abaculus.png)](http://travis-ci.org/mapbox/abaculus)
  - node-blend - [![Build Status](https://secure.travis-ci.org/mapbox/node-blend.png)](http://travis-ci.org/mapbox/node-blend)
  - tilelive-vector - [![Build Status](https://secure.travis-ci.org/mapbox/tilelive-vector.png)](http://travis-ci.org/mapbox/tilelive-vector)
  - tilelive-bridge - [![Build Status](https://secure.travis-ci.org/mapbox/tilelive-bridge.png)](http://travis-ci.org/mapbox/tilelive-bridge)
