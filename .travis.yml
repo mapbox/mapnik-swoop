@@ -10,8 +10,9 @@ before_install:
 
 install:
 - npm install --loglevel=http --fallback-to-build=false --no-rollback
-- for i in $(ls node_modules/); do (if [[ $i != "mapnik-omnivore" ]]; then cd node_modules/$i && npm install --no-rollback $(node -e "console.log(Object.keys(require('./package.json').devDependencies).join(' '))"); fi); done || true
+- for i in $(ls node_modules/); do (if [[ $i =~ "omnivore" ]]; then cd node_modules/$i && npm install --no-rollback $(node -e "console.log(Object.keys(require('./package.json').devDependencies).join(' '))"); fi); done || true
 - (cd node_modules/mapnik-omnivore && npm install tape coveralls istanbul http://mapbox-npm.s3.amazonaws.com/package/mapnik-test-data-2.0.3-fece0a9c546074a1479e9eae2333184029bb2279.tgz)
+- (cd node_modules/tilelive-omnivore && npm install tape coveralls istanbul http://mapbox-npm.s3.amazonaws.com/package/mapnik-test-data-2.0.3-fece0a9c546074a1479e9eae2333184029bb2279.tgz)
 
 before_script:
 - npm ls mapnik
