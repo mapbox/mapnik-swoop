@@ -19,7 +19,7 @@
     "mapnik-omnivore": "https://github.com/mapbox/mapnik-omnivore/tarball/master",
     "vector-tile-query": "https://github.com/mapbox/vector-tile-query/tarball/master",
     "assert-http": "https://github.com/mapbox/assert-http/tarball/master",
-    "tilelive-omnivore": "https://github.com/mapbox/tilelive-omnivore/tarball/master"
+    "tilelive-vector": "https://github.com/mapbox/tilelive-vector/tarball/master"
   }, 
   "devDependencies": {
     "mocha": "1.x"

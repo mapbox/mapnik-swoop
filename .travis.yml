@@ -3,6 +3,10 @@ language: node_js
 node_js:
   - "0.10.33"
 
+env:
+  global:
+  - secure: "J6bryOYSIYMroBZdSdlg+zRRhHizJVoXsxhgA8qQrG0VSExga2AEOebarV0JbXNwHRP/fkZeFNAiag9ElAaj4GOMRoyuU3z4CNTqUPuVaghsYetn42NrzNnTIFRUlwOgHyTJACZPIwBWPLjPhRazBlJaF6EjOJbYhwSM7hdsHKo="
+
 before_install:
 - sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
 - sudo apt-get update -q
@@ -12,7 +16,6 @@ install:
 - npm install --loglevel=http --fallback-to-build=false --no-rollback
 - for i in $(ls node_modules/); do (if [[ $i =~ "omnivore" ]]; then cd node_modules/$i && npm install --no-rollback $(node -e "console.log(Object.keys(require('./package.json').devDependencies).join(' '))"); fi); done || true
 - (cd node_modules/mapnik-omnivore && npm install tape coveralls istanbul http://mapbox-npm.s3.amazonaws.com/package/mapnik-test-data-2.0.3-fece0a9c546074a1479e9eae2333184029bb2279.tgz)
-- (cd node_modules/tilelive-omnivore && npm install tape tilelive queue-async http://mapbox-npm.s3.amazonaws.com/package/mapnik-test-data-2.0.3-fece0a9c546074a1479e9eae2333184029bb2279.tgz)
 
 before_script:
 - npm ls mapnik
