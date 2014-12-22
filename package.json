@@ -11,7 +11,7 @@
   },
   "main": "./test.js",
   "dependencies": {
-    "mapnik" : "https://github.com/mapnik/node-mapnik/tarball/master",
+    "mapnik" : "~3.1.3",
     "blend" : "https://github.com/mapbox/node-blend/tarball/master",
     "abaculus" : "https://github.com/mapbox/abaculus/tarball/master",
     "tilelive-bridge": "https://github.com/mapbox/tilelive-bridge/tarball/master",
