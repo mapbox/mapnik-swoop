@@ -21,7 +21,7 @@
     "assert-http": "https://github.com/mapbox/assert-http/tarball/master",
     "tilelive-vector": "https://github.com/mapbox/tilelive-vector/tarball/master",
     "landspeed": "https://github.com/mapbox/landspeed.js/tarball/master",
-    "carmen": "https://github.com/mapbox/carmen/tarball/master",
+    "carmen": "https://github.com/mapbox/carmen/tarball/master"
   }, 
   "devDependencies": {
     "mocha": "1.x"
