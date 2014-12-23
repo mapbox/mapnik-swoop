@@ -75,13 +75,15 @@ var apps = package_json.dependencies;
 
 describe('Dependents', function() {
     Object.keys(apps).forEach(function(app) {
-        it(app + ' tests ', function(done) {
-            var app_dir = path.join(__dirname,'node_modules',app);
-            var opts = {cwd:app_dir}
-            run(app,'npm',['test'],opts, function(code) {
-                assert.equal(0,code);
-                done();
+        if (app != 'mapnik') {
+            it(app + ' tests ', function(done) {
+                var app_dir = path.join(__dirname,'node_modules',app);
+                var opts = {cwd:app_dir}
+                run(app,'npm',['test'],opts, function(code) {
+                    assert.equal(0,code);
+                    done();
+                });
             });
-        });
+        }
     });
 });
