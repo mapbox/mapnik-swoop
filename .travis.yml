@@ -21,6 +21,8 @@ install:
 
 before_script:
 - npm ls mapnik
+- npm dedupe
+- npm ls mapnik
 
 script:
 - npm test
