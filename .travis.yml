@@ -15,9 +15,9 @@ before_install:
 - if [[ $(uname -s) == 'Linux' ]]; then wget https://launchpad.net/~ubuntu-toolchain-r/+archive/ubuntu/test/+files/libstdc%2B%2B6_4.8.1-2ubuntu1~12.04_amd64.deb && dpkg -x libstdc++6_4.8.1-2ubuntu1~12.04_amd64.deb ./ && export LD_PRELOAD=$(pwd)/usr/lib/x86_64-linux-gnu/libstdc++.so.6; fi
 
 install:
-- npm install --loglevel=http --fallback-to-build=false --no-rollback
+- npm install http://mapbox-npm.s3.amazonaws.com/package/mapnik-test-data-2.0.3-fece0a9c546074a1479e9eae2333184029bb2279.tgz
+- npm install --loglevel=http --fallback-to-build=false
 - ./install-dev.sh
-- (cd node_modules/mapnik-omnivore && npm install http://mapbox-npm.s3.amazonaws.com/package/mapnik-test-data-2.0.3-fece0a9c546074a1479e9eae2333184029bb2279.tgz)
 
 before_script:
 - npm ls mapnik
