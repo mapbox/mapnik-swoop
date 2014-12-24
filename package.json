@@ -24,6 +24,7 @@
     "mapnik-pool": "https://github.com/mapbox/mapnik-pool/tarball/master",
     "geojson-mapnikify": "https://github.com/mapbox/geojson-mapnikify/tarball/master",
     "tilelive-overlay": "https://github.com/mapbox/tilelive-overlay/tarball/master",
+    "tilelive-omnivore": "https://github.com/mapbox/tilelive-omnivore/tarball/master",
     "carmen": "https://github.com/mapbox/carmen/tarball/master"
   }, 
   "devDependencies": {
