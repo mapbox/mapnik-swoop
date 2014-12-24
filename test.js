@@ -58,7 +58,7 @@ var count_module = function (name, callback) {
 };
 
 describe('Duplicate modules', function () {
-    ['mapnik'].forEach(function (mod) {
+    ['mapnik','sqlite3','gdal','tilelive-s3','srs'].forEach(function (mod) {
         it('there should only be one ' + mod + ' module otherwise you are asking for pwnage', function (done) {
             this.timeout(4000);
             count_module(mod, function (err, count) {
