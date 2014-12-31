@@ -47,13 +47,13 @@ function run(name, command,args,opts,cb) {
 var count_module = function (name, callback) {
     var cmd = 'npm ls ' + name;
     cp.exec(cmd,
-        function (error, stdout, stderr) {
-            var pattern = new RegExp(name + '@', 'g');
+        function (err, stdout, stderr) {
+            var pattern = new RegExp(' ' + name + '@', 'g');
             var match = stdout.match(pattern);
             if (!match) {
-                return callback(null, 0);
+                return callback(err, 0);
             }
-            return callback(null, match.length);
+            return callback(err, match.length,stdout);
         });
 };
 
@@ -61,10 +61,11 @@ describe('Duplicate modules', function () {
     ['mapnik','sqlite3','gdal','tilelive-s3','srs'].forEach(function (mod) {
         it('there should only be one ' + mod + ' module otherwise you are asking for pwnage', function (done) {
             this.timeout(4000);
-            count_module(mod, function (err, count) {
+            count_module(mod, function(err, count, output) {
+                assert.notEqual(count, 0, 'you are missing the ' + mod + ' module - `npm ls ' + mod + '` gave:\n' + output);
+                assert.equal(count, 1, 'you have more than one copy of ' + mod + ' - `npm ls ' + mod + '` gave:\n' + output);
+                // throw error only if other asserts work
                 if (err) throw err;
-                assert.notEqual(count, 0, 'you are missing the ' + mod + ' module (`npm ls ' + mod + '`)');
-                assert.equal(count, 1, 'you have more than one copy of ' + mod + ' (`npm ls ' + mod + '`)');
                 done();
             });
         });
