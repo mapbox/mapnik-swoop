@@ -26,7 +26,12 @@
     "tilelive-overlay": "https://github.com/mapbox/tilelive-overlay/tarball/master",
     "tilelive-omnivore": "https://github.com/mapbox/tilelive-omnivore/tarball/master",
     "tilestrata-mapnik": "https://github.com/naturalatlas/tilestrata-mapnik/tarball/master",
-    "carmen": "https://github.com/mapbox/carmen/tarball/master"
+    "carmen": "https://github.com/mapbox/carmen/tarball/master",
+    "tilelive-blend":"https://github.com/mojodna/tilelive-blend/tarball/master",
+    "tilelive-carto":"https://github.com/mojodna/tilelive-carto/tarball/master",
+    "tilelive-merge":"https://github.com/mojodna/tilelive-merge/tarball/master",
+    "tilelive-solid":"https://github.com/mojodna/tilelive-solid/tarball/master",
+    "tilelive-tmsource":"https://github.com/mojodna/tilelive-tmsource/tarball/master"
   }, 
   "devDependencies": {
     "mocha": "1.x"
