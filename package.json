@@ -32,7 +32,8 @@
     "tilelive-carto":"https://github.com/mojodna/tilelive-carto/tarball/master",
     "tilelive-merge":"https://github.com/mojodna/tilelive-merge/tarball/master",
     "tilelive-solid":"https://github.com/mojodna/tilelive-solid/tarball/master",
-    "tilelive-tmsource":"https://github.com/mojodna/tilelive-tmsource/tarball/master"
+    "tilelive-tmsource":"https://github.com/mojodna/tilelive-tmsource/tarball/master",
+    "tilelive-xray":"https://github.com/mojodna/tilelive-xray/tarball/master"
   }, 
   "devDependencies": {
     "mocha": "1.x"
