@@ -1,29 +1,33 @@
-language: node_js
-
-node_js:
-  - "0.10"
-  #- "0.11"
-
-env:
-  global:
-  - secure: "J6bryOYSIYMroBZdSdlg+zRRhHizJVoXsxhgA8qQrG0VSExga2AEOebarV0JbXNwHRP/fkZeFNAiag9ElAaj4GOMRoyuU3z4CNTqUPuVaghsYetn42NrzNnTIFRUlwOgHyTJACZPIwBWPLjPhRazBlJaF6EjOJbYhwSM7hdsHKo="
+language: cpp
 
 sudo: false
 
+env:
+  matrix:
+   - NODE_NVM_VERSION="0.10.33"
+  global:
+  - secure: "J6bryOYSIYMroBZdSdlg+zRRhHizJVoXsxhgA8qQrG0VSExga2AEOebarV0JbXNwHRP/fkZeFNAiag9ElAaj4GOMRoyuU3z4CNTqUPuVaghsYetn42NrzNnTIFRUlwOgHyTJACZPIwBWPLjPhRazBlJaF6EjOJbYhwSM7hdsHKo="
+
 before_install:
-# install c++11 capable libstdc++ without sudo
-- if [[ $(uname -s) == 'Linux' ]]; then wget https://launchpad.net/~ubuntu-toolchain-r/+archive/ubuntu/test/+files/libstdc%2B%2B6_4.8.1-2ubuntu1~12.04_amd64.deb && dpkg -x libstdc++6_4.8.1-2ubuntu1~12.04_amd64.deb ./ && export LD_PRELOAD=$(pwd)/usr/lib/x86_64-linux-gnu/libstdc++.so.6; fi
+ # install c++11 capable libstdc++ without sudo
+ - if [[ $(uname -s) == 'Linux' ]]; then wget https://launchpad.net/~ubuntu-toolchain-r/+archive/ubuntu/test/+files/libstdc%2B%2B6_4.8.1-2ubuntu1~12.04_amd64.deb && dpkg -x libstdc++6_4.8.1-2ubuntu1~12.04_amd64.deb ./ && export LD_PRELOAD=$(pwd)/usr/lib/x86_64-linux-gnu/libstdc++.so.6; fi
+ - git clone https://github.com/creationix/nvm.git ../.nvm
+ - source ../.nvm/nvm.sh
+ - nvm install $NODE_NVM_VERSION
+ - nvm use $NODE_NVM_VERSION
+ - node --version
+ - npm --version
 
 install:
-- npm install http://mapbox-npm.s3.amazonaws.com/package/mapnik-test-data-2.0.3-fece0a9c546074a1479e9eae2333184029bb2279.tgz
-- npm install --loglevel=http --fallback-to-build=false
-- ./install-dev.sh
+ - npm install http://mapbox-npm.s3.amazonaws.com/package/mapnik-test-data-2.0.3-fece0a9c546074a1479e9eae2333184029bb2279.tgz
+ - npm install --loglevel=http --fallback-to-build=false
+ - ./install-dev.sh
 
 before_script:
-- npm ls mapnik
+ - npm ls mapnik
 
 script:
-- npm test
-- npm dedupe
-- npm test
+ - npm test
+ - npm dedupe
+ - npm test
 
