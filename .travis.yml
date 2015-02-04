@@ -2,6 +2,10 @@ language: cpp
 
 sudo: false
 
+os:
+  - linux
+  - osx
+
 env:
   matrix:
    - NODE_NVM_VERSION="0.10.33"
