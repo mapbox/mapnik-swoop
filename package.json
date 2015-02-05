@@ -26,8 +26,7 @@
     "geojson-mapnikify": "https://github.com/mapbox/geojson-mapnikify/tarball/master",
     "tilelive-overlay": "https://github.com/mapbox/tilelive-overlay/tarball/master",
     "tilelive-omnivore": "https://github.com/mapbox/tilelive-omnivore/tarball/master",
-    "tilestrata-mapnik": "https://github.com/naturalatlas/tilestrata-mapnik/tarball/master",
-    "carmen": "https://github.com/mapbox/carmen/tarball/v1.5.2"
+    "tilestrata-mapnik": "https://github.com/naturalatlas/tilestrata-mapnik/tarball/master"
   }, 
   "devDependencies": {
     "mocha": "1.x"
