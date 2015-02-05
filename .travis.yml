@@ -9,10 +9,6 @@ matrix:
     - os: linux
       env: NODE_NVM_VERSION="0.10.33"
 
-os:
-  - linux
-  - osx
-
 env:
   global:
    - secure: "J6bryOYSIYMroBZdSdlg+zRRhHizJVoXsxhgA8qQrG0VSExga2AEOebarV0JbXNwHRP/fkZeFNAiag9ElAaj4GOMRoyuU3z4CNTqUPuVaghsYetn42NrzNnTIFRUlwOgHyTJACZPIwBWPLjPhRazBlJaF6EjOJbYhwSM7hdsHKo="
