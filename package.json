@@ -27,7 +27,7 @@
     "tilelive-overlay": "https://github.com/mapbox/tilelive-overlay/tarball/master",
     "tilelive-omnivore": "https://github.com/mapbox/tilelive-omnivore/tarball/master",
     "tilestrata-mapnik": "https://github.com/naturalatlas/tilestrata-mapnik/tarball/master",
-    "carmen": "https://github.com/mapbox/carmen/tarball/v1.9.1"
+    "carmen": "https://github.com/mapbox/carmen/tarball/v1.5.2"
   }, 
   "devDependencies": {
     "mocha": "1.x"
