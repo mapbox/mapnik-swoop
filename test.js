@@ -60,7 +60,6 @@ var count_module = function (name, callback) {
 describe('Duplicate modules', function () {
     ['mapnik','gdal','srs','mapnik-reference'].forEach(function (mod) {
         it('there should only be one ' + mod + ' module otherwise you are asking for pwnage', function (done) {
-            this.timeout(4000);
             count_module(mod, function(err, count, output) {
                 assert.notEqual(count, 0, 'you are missing the ' + mod + ' module - `npm ls ' + mod + '` gave:\n' + output);
                 assert.equal(count, 1, 'you have more than one copy of ' + mod + ' - `npm ls ' + mod + '` gave:\n' + output);
