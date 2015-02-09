@@ -24,12 +24,10 @@ before_install:
  - npm --version
 
 install:
- - npm install http://mapbox-npm.s3.amazonaws.com/package/mapnik-test-data-2.0.3-fece0a9c546074a1479e9eae2333184029bb2279.tgz
- - npm install --loglevel=http --fallback-to-build=false
- - ./install-dev.sh
+ - ./install.sh
 
 before_script:
- - npm ls mapnik
+ - npm ls
 
 script:
  - npm test
