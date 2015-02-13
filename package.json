@@ -17,7 +17,7 @@
     "abaculus" : "https://github.com/mapbox/abaculus/tarball/master",
     "tilelive-bridge": "https://github.com/mapbox/tilelive-bridge/tarball/master",
     "tilelive-mapnik": "https://github.com/mapbox/tilelive-mapnik/tarball/master",
-    "mapnik-omnivore": "https://github.com/mapbox/mapnik-omnivore/tarball/master",
+    "mapnik-omnivore": "https://github.com/mapbox/mapnik-omnivore/tarball/fix-nested-test",
     "vector-tile-query": "https://github.com/mapbox/vector-tile-query/tarball/master",
     "assert-http": "https://github.com/mapbox/assert-http/tarball/master",
     "landspeed": "https://github.com/mapbox/landspeed.js/tarball/master",
