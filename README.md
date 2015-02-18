@@ -4,19 +4,40 @@ https://www.npmjs.com/browse/depended/mapnik
 
 [![Build Status](https://travis-ci.org/mapbox/mapnik-swoop.svg?branch=master)](https://travis-ci.org/mapbox/mapnik-swoop)
 
+### Setup
+
+ - Decide which node-mapnik version you want to test. By default package.json lists `"mapnik" : "https://github.com/mapnik/node-mapnik/tarball/master",` which assumes that:
+   - the upcoming node-mapnik release is what you want to test
+   - it has been merged into master in preparation for release
+   - binaries are published for it
+   - you are here testing because you have not yet tagged or `npm published` the version
+
+ - Decide if you need to point any dependencies at custom branches. This may be needed if the upcoming node-mapnik release requires changes to deps or their test fixtures.
+
+
+### Installing
+
+    npm install
+
+
+### Testing
+
+    npm test
+
+
 ### Details
 
-The `.travis.yml` in this repo does a couple things:
+The `install` step above is unique: it installs each dependency from github and then, in a `postinstall` step recurses into each dependency directory to install their `devDependencies`. This is done so that we can actually run each dependencies tests.
 
- - Installs a bleeding edge or just released node-mapnik version
- - Ensures no duplicate node-mapnik versions are installed when installing all dependents. This is important because duplicate Node C++ modules in a tree can cause weird behavior or crashes.
- - Installs a bunch of modules that depend directly (or indirectly) on node-mapnik and then installs their `devDependencies` so that we can run their tests.
+The `test` step runs a set of `mocha` tests which use a child process to run the tests of each dependency and collect the results. The tests also ensures no duplicate node-mapnik versions are installed after installing all dependents. This is important because duplicate Node C++ modules in a tree can cause bad behavior or crashes. The idea is that if a C++ module is declared at the "top level" (inside the package.json at the root of this directory) then it should no longer be installed in the `node_modules` of any dependencies. If it is then you'll end up with duplicate tests failing that should be resolved by tweaking downstream dependencies to accept the upcoming node-mapnik version as valid.
 
-The goal here is to ensure the upcoming node-mapnik release does not accidentally break any dependents. And if it does then we want to find out right away rather than throw bug reports.
+The goal here is to ensure the upcoming node-mapnik release does not accidentally break any dependents. Or, if the upcoming node-mapnik version is known to contain breaking changes, then this offers one place to test all those changes have been adapted to (by pointing at branches of downstream deps which updated code).
+
 
 ### Build status of each module
 
- This is here to provide a quick view of any modules who might have failing tests so that they can be excluded from `mapnik-swoop`. We're only concerned about modules that have 100% passing tests against the latest node-mapnik tag but which might have tests that fail against the upcoming node-mapnik tag.
+ This is here to provide a quick view of any modules who might have failing tests before any node-mapnik upgrade so that they can be excluded from `mapnik-swoop` or at least fixed before starting to test a new node-mapnik version.
+
 
  - node-mapnik - [![Build Status](https://secure.travis-ci.org/mapnik/node-mapnik.svg?branch=master)](http://travis-ci.org/mapnik/node-mapnik) | [![Dependencies](https://david-dm.org/mapnik/node-mapnik.svg)](https://david-dm.org/mapnik/node-mapnik)
   - mapnik-reference - [![Build Status](https://secure.travis-ci.org/mapnik/mapnik-reference.svg?branch=master)](http://travis-ci.org/mapnik/mapnik-reference) | [![Dependencies](https://david-dm.org/mapnik/mapnik-reference.svg)](https://david-dm.org/mapnik/mapnik-reference)

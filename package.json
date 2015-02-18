@@ -32,6 +32,7 @@
     "mocha": "1.x"
   },
   "scripts": {
+    "postinstall": "./install-dev.sh",
     "test":"mocha -R spec --timeout 100000"
   }
 }
