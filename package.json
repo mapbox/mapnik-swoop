@@ -22,9 +22,9 @@
     "vector-tile-query": "https://github.com/mapbox/vector-tile-query/tarball/master",
     "assert-http": "https://github.com/mapbox/assert-http/tarball/master",
     "landspeed": "https://github.com/mapbox/landspeed.js/tarball/master",
-    "tilelive-vector": "https://github.com/mapbox/tilelive-vector/tarball/mapnik_3.1.5",
+    "tilelive-vector": "https://github.com/mapbox/tilelive-vector/tarball/master",
     "mapnik-pool": "https://github.com/mapbox/mapnik-pool/tarball/master",
-    "geojson-mapnikify": "https://github.com/mapbox/geojson-mapnikify/tarball/mapnik_3.1.5",
+    "geojson-mapnikify": "https://github.com/mapbox/geojson-mapnikify/tarball/master",
     "tilelive-overlay": "https://github.com/mapbox/tilelive-overlay/tarball/master",
     "tilelive-omnivore": "https://github.com/mapbox/tilelive-omnivore/tarball/master",
     "tilestrata-mapnik": "https://github.com/naturalatlas/tilestrata-mapnik/tarball/master"
