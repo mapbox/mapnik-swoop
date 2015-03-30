@@ -13,6 +13,7 @@
   "dependencies": {
     "mapnik" : "https://github.com/mapnik/node-mapnik/tarball/master",
     "carmen" : "https://github.com/mapbox/carmen/tarball/master",
+    "preprocessorcerer": "https://github.com/mapbox/preprocessorcerer/tarball/master",
     "mapnik-reference" : "https://github.com/mapnik/mapnik-reference/tarball/master",
     "blend" : "https://github.com/mapbox/node-blend/tarball/master",
     "abaculus" : "https://github.com/mapbox/abaculus/tarball/master",
