@@ -24,7 +24,7 @@
     "landspeed": "https://github.com/mapbox/landspeed.js/tarball/master",
     "tilelive-vector": "https://github.com/mapbox/tilelive-vector/tarball/simplify",
     "mapnik-pool": "https://github.com/mapbox/mapnik-pool/tarball/master",
-    "geojson-mapnikify": "https://github.com/mapbox/geojson-mapnikify/tarball/master",
+    "geojson-mapnikify": "https://github.com/mapbox/geojson-mapnikify/tarball/mapnik-up",
     "tilelive-overlay": "https://github.com/mapbox/tilelive-overlay/tarball/master",
     "tilelive-omnivore": "https://github.com/mapbox/tilelive-omnivore/tarball/master",
     "tilestrata-mapnik": "https://github.com/naturalatlas/tilestrata-mapnik/tarball/master"
