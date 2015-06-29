@@ -27,7 +27,7 @@
     "geojson-mapnikify": "https://github.com/mapbox/geojson-mapnikify/tarball/mapnik-up",
     "tilelive-overlay": "https://github.com/mapbox/tilelive-overlay/tarball/master",
     "tilelive-omnivore": "https://github.com/mapbox/tilelive-omnivore/tarball/mapnik-3.4.0",
-    "tilestrata-mapnik": "https://github.com/naturalatlas/tilestrata-mapnik/tarball/master"
+    "tilestrata-mapnik": "https://github.com/flippmoke/tilestrata-mapnik/tarball/master"
   }, 
   "devDependencies": {
     "mocha": "1.x"
