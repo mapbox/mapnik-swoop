@@ -11,7 +11,7 @@
   },
   "main": "./test.js",
   "dependencies": {
-    "mapnik" : "https://github.com/mapnik/node-mapnik/tarball/master",
+    "mapnik" : "3.4.0",
     "carmen" : "https://github.com/mapbox/carmen/tarball/mapnik-3.4.0",
     "mapnik-reference" : "https://github.com/mapnik/mapnik-reference/tarball/master",
     "blend" : "https://github.com/mapbox/node-blend/tarball/mapnik-up",
