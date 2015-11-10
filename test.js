@@ -85,9 +85,7 @@ describe('Dependents', function() {
                 var app_dir = path.join(__dirname,'node_modules',app);
                 var opts = {cwd:app_dir}
                 run(app,'npm',['test'],opts, function(code) {
-                    if (app != 'carmen') {
-                        assert.equal(0,code);
-                    }
+                    assert.equal(0,code);
                     done();
                 });
             });
