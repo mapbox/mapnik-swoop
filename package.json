@@ -33,6 +33,7 @@
     "mocha": "1.x"
   },
   "scripts": {
+    "preinstall": "npm cache clean",
     "postinstall": "./install-dev.sh",
     "test":"mocha -R spec --timeout 500000"
   }
