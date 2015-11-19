@@ -17,6 +17,7 @@ function run(name, command,args,opts,cb) {
     console.log('\n\n' + name + ' --> ');
     var streaming = false;
     var count = 0;
+    var buffered_stdout = '';
     child.stdout.on('data', function (data) {
         var msg = data.toString();
         if (msg.indexOf('not ok ') > -1) {
@@ -30,6 +31,7 @@ function run(name, command,args,opts,cb) {
             }
         } else {
             ++count;
+            buffered_stdout += msg;
             if (count % 100 == 0) {
                 console.log('waiting...');
             }
@@ -40,6 +42,9 @@ function run(name, command,args,opts,cb) {
         console.error(msg.slice(0,msg.length-1));
     });
     child.on('close', function (code) {
+          if (code != 0) {
+            console.log(buffered_stdout);
+          }
           return cb(code);
     });
 }

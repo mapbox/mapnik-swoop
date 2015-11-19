@@ -12,7 +12,6 @@
   "main": "./test.js",
   "dependencies": {
     "mapnik" : "https://github.com/mapnik/node-mapnik/tarball/master",
-    "carmen" : "https://github.com/mapbox/carmen/tarball/master",
     "preprocessorcerer": "https://github.com/mapbox/preprocessorcerer/tarball/master",
     "mapnik-reference" : "https://github.com/mapnik/mapnik-reference/tarball/master",
     "blend" : "https://github.com/mapbox/node-blend/tarball/master",
@@ -28,12 +27,13 @@
     "geojson-mapnikify": "https://github.com/mapbox/geojson-mapnikify/tarball/master",
     "tilelive-overlay": "https://github.com/mapbox/tilelive-overlay/tarball/master",
     "tilelive-omnivore": "https://github.com/mapbox/tilelive-omnivore/tarball/master",
-    "tilestrata-mapnik": "https://github.com/naturalatlas/tilestrata-mapnik/tarball/master"
+    "tilestrata-mapnik": "https://github.com/flippmoke/tilestrata-mapnik/tarball/mapnik-3.4.1"
   }, 
   "devDependencies": {
     "mocha": "1.x"
   },
   "scripts": {
+    "preinstall": "npm cache clean",
     "postinstall": "./install-dev.sh",
     "test":"mocha -R spec --timeout 500000"
   }

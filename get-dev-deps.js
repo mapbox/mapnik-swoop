@@ -19,5 +19,8 @@ if (package_json.devDependencies) {
         }
         return true;
     })
+    devDeps = devDeps.map(function(name) {
+        return name+'@'+package_json.devDependencies[name];
+    });
     console.log(devDeps.concat(add_by_value).join(' '));
 }
