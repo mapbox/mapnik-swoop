@@ -80,7 +80,7 @@ var apps = package_json.dependencies;
 
 describe('Dependents', function() {
     Object.keys(apps).forEach(function(app) {
-        if (app != 'mapnik') {
+        if (app != 'mapnik' && app != 'gdal') {
             it(app + ' tests ', function(done) {
                 var app_dir = path.join(__dirname,'node_modules',app);
                 var opts = {cwd:app_dir}
