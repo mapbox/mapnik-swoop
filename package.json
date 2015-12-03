@@ -12,8 +12,8 @@
   "main": "./test.js",
   "dependencies": {
     "mapnik" : "https://github.com/mapnik/node-mapnik/tarball/master",
-    "srs":"*",
-    "gdal":"*",
+    "srs":"~1.0.1",
+    "gdal":"~0.7.2",
     "preprocessorcerer": "https://github.com/mapbox/preprocessorcerer/tarball/master",
     "mapnik-reference" : "https://github.com/mapnik/mapnik-reference/tarball/master",
     "blend" : "https://github.com/mapbox/node-blend/tarball/master",
@@ -27,7 +27,7 @@
     "tilelive-vector": "https://github.com/mapbox/tilelive-vector/tarball/master",
     "mapnik-pool": "https://github.com/mapbox/mapnik-pool/tarball/master",
     "geojson-mapnikify": "https://github.com/mapbox/geojson-mapnikify/tarball/master",
-    "tilelive-overlay": "https://github.com/mapbox/tilelive-overlay/tarball/master",
+    "tilelive-overlay": "https://github.com/mapbox/tilelive-overlay/tarball/node-mapnik-3.4.11",
     "tilelive-omnivore": "https://github.com/mapbox/tilelive-omnivore/tarball/master",
     "tilestrata-mapnik": "https://github.com/flippmoke/tilestrata-mapnik/tarball/mapnik-3.4.1"
   }, 
