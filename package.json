@@ -25,6 +25,7 @@
     "mapnik-pool": "https://github.com/mapbox/mapnik-pool/tarball/master",
     "mapnik-reference": "https://github.com/mapnik/mapnik-reference/tarball/master",
     "preprocessorcerer": "https://github.com/mapbox/preprocessorcerer/tarball/master",
+    "raster-tile-query": "https://github.com/mapbox/raster-tile-query/tarball/master",
     "spritezero": "https://github.com/mapbox/spritezero/tarball/master",
     "srs": "~1.0.1",
     "tilelive-bridge": "https://github.com/mapbox/tilelive-bridge/tarball/master",
