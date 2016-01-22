@@ -70,4 +70,5 @@ The `test` step does two things:
  - tilestrata-mapnik - [![Build Status](https://secure.travis-ci.org/naturalatlas/tilestrata-mapnik.svg?branch=master)](http://travis-ci.org/naturalatlas/tilestrata-mapnik) | [![Dependencies](https://david-dm.org/naturalatlas/tilestrata-mapnik.svg)](https://david-dm.org/naturalatlas/tilestrata-mapnik)
  - spritezero - [![Build Status](https://travis-ci.org/mapbox/spritezero.svg?branch=master)](http://travis-ci.org/mapbox/spritezero) | [![Dependencies](https://david-dm.org/mapbox/spritezero.svg)](https://david-dm.org/mapbox/spritezero)
  - mapbox-upload-validate - [![Build Status](https://travis-ci.org/mapbox/mapbox-upload-validate.svg?branch=master)](http://travis-ci.org/mapbox/mapbox-upload-validate) | [![Dependencies](https://david-dm.org/mapbox/mapbox-upload-validate.svg)](https://david-dm.org/mapbox/mapbox-upload-validate)
+ - raster-tile-query - [![Build Status](https://travis-ci.org/mapbox/raster-tile-query.svg?branch=master)](http://travis-ci.org/mapbox/raster-tile-query) | [![Dependencies](https://david-dm.org/mapbox/raster-tile-query.svg)](https://david-dm.org/mapbox/raster-tile-query)
 
