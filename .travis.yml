@@ -37,7 +37,6 @@ before_script:
  - npm ls
 
 script:
- - npm test
  - npm dedupe
  - npm test
 
