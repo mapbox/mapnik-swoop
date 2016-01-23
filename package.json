@@ -28,7 +28,10 @@
     "mapnik-pool": "https://github.com/mapbox/mapnik-pool/tarball/master",
     "geojson-mapnikify": "https://github.com/mapbox/geojson-mapnikify/tarball/master",
     "tilelive-overlay": "https://github.com/mapbox/tilelive-overlay/tarball/master",
-    "tilelive-omnivore": "https://github.com/mapbox/tilelive-omnivore/tarball/master"
+    "tilelive-omnivore": "https://github.com/mapbox/tilelive-omnivore/tarball/master",
+    "raster-tile-query": "https://github.com/mapbox/raster-tile-query/tarball/master",
+    "spritezero": "https://github.com/mapbox/spritezero/tarball/master",
+    "mapbox-upload-validate": "https://github.com/mapbox/mapbox-upload-validate/tarball/master"
   }, 
   "devDependencies": {
     "mocha": "1.x"
