@@ -12,7 +12,7 @@
   "main": "./test.js",
   "dependencies": {
     "mapnik" : "https://github.com/mapnik/node-mapnik/tarball/master",
-    "srs":"~1.0.1",
+    "srs":"~1.1.0",
     "gdal":"~0.8.0",
     "preprocessorcerer": "https://github.com/mapbox/preprocessorcerer/tarball/master",
     "mapnik-reference" : "https://github.com/mapnik/mapnik-reference/tarball/master",
