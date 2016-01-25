@@ -21,7 +21,7 @@
     "tilelive-bridge": "https://github.com/mapbox/tilelive-bridge/tarball/master",
     "tilelive-mapnik": "https://github.com/mapbox/tilelive-mapnik/tarball/master",
     "mapnik-omnivore": "https://github.com/mapbox/mapnik-omnivore/tarball/master",
-    "vector-tile-query": "https://github.com/mapbox/vector-tile-query/tarball/master",
+    "vector-tile-query": "https://github.com/mapbox/vector-tile-query/tarball/update-deps",
     "assert-http": "https://github.com/mapbox/assert-http/tarball/master",
     "landspeed": "https://github.com/mapbox/landspeed.js/tarball/master",
     "tilelive-vector": "https://github.com/mapbox/tilelive-vector/tarball/master",
@@ -31,7 +31,7 @@
     "tilelive-omnivore": "https://github.com/mapbox/tilelive-omnivore/tarball/master",
     "raster-tile-query": "https://github.com/mapbox/raster-tile-query/tarball/master",
     "spritezero": "https://github.com/mapbox/spritezero/tarball/master",
-    "mapbox-upload-validate": "https://github.com/mapbox/mapbox-upload-validate/tarball/master"
+    "mapbox-upload-validate": "https://github.com/mapbox/mapbox-upload-validate/tarball/update-deps"
   }, 
   "devDependencies": {
     "mocha": "1.x"
