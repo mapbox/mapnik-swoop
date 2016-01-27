@@ -19,8 +19,6 @@ env:
   global:
    # MapboxAccessToken for tilelive-vector
    - secure: "J6bryOYSIYMroBZdSdlg+zRRhHizJVoXsxhgA8qQrG0VSExga2AEOebarV0JbXNwHRP/fkZeFNAiag9ElAaj4GOMRoyuU3z4CNTqUPuVaghsYetn42NrzNnTIFRUlwOgHyTJACZPIwBWPLjPhRazBlJaF6EjOJbYhwSM7hdsHKo="
-   # Avoid need for extra s3 creds: https://github.com/mapbox/tilelive-vector/pull/116
-   - TILELIVE_VECTOR_NO_AUTH: "true"
 
 before_install:
  - git clone https://github.com/creationix/nvm.git ../.nvm

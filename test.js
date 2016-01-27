@@ -11,6 +11,8 @@ if (process.platform === 'win32') {
 }
 process.env.PATH = cmd_path + sep + process.env.PATH;
 process.env.NODE_PATH = path.join(__dirname,'../lib/');
+// Avoid need for extra s3 creds: https://github.com/mapbox/tilelive-vector/pull/116
+process.env.TILELIVE_VECTOR_NO_AUTH = "true";
 
 function run(name, command,args,opts,cb) {
     var child = cp.spawn(command,args,opts);
