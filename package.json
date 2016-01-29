@@ -18,20 +18,20 @@
     "mapnik-reference" : "https://github.com/mapnik/mapnik-reference/tarball/master",
     "blend" : "https://github.com/mapbox/node-blend/tarball/master",
     "abaculus" : "https://github.com/mapbox/abaculus/tarball/master",
-    "tilelive-bridge": "https://github.com/mapbox/tilelive-bridge/tarball/master",
+    "tilelive-bridge": "https://github.com/mapbox/tilelive-bridge/tarball/mapnik-v2_spec",
     "tilelive-mapnik": "https://github.com/mapbox/tilelive-mapnik/tarball/master",
     "mapnik-omnivore": "https://github.com/mapbox/mapnik-omnivore/tarball/master",
     "vector-tile-query": "https://github.com/mapbox/vector-tile-query/tarball/update-deps",
     "assert-http": "https://github.com/mapbox/assert-http/tarball/master",
     "landspeed": "https://github.com/mapbox/landspeed.js/tarball/master",
-    "tilelive-vector": "https://github.com/mapbox/tilelive-vector/tarball/master",
+    "tilelive-vector": "https://github.com/mapbox/tilelive-vector/tarball/mapnik-v2_spec",
     "mapnik-pool": "https://github.com/mapbox/mapnik-pool/tarball/master",
     "geojson-mapnikify": "https://github.com/mapbox/geojson-mapnikify/tarball/master",
     "tilelive-overlay": "https://github.com/mapbox/tilelive-overlay/tarball/master",
-    "tilelive-omnivore": "https://github.com/mapbox/tilelive-omnivore/tarball/master",
+    "tilelive-omnivore": "https://github.com/mapbox/tilelive-omnivore/tarball/mapnik-v2_spec",
     "raster-tile-query": "https://github.com/mapbox/raster-tile-query/tarball/master",
     "spritezero": "https://github.com/mapbox/spritezero/tarball/master",
-    "mapbox-upload-validate": "https://github.com/mapbox/mapbox-upload-validate/tarball/update-deps"
+    "mapbox-upload-validate": "https://github.com/mapbox/mapbox-upload-validate/tarball/mapnik-v2_spec"
   }, 
   "devDependencies": {
     "mocha": "1.x"
