@@ -29,7 +29,7 @@ before_install:
  - npm --version
 
 install:
- - npm install --loglevel=http --fallback-to-build=false
+ - npm install --fallback-to-build=false
 
 before_script:
  - npm ls
