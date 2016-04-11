@@ -11,7 +11,7 @@
   },
   "main": "./test.js",
   "dependencies": {
-    "mapnik" : "https://github.com/mapnik/node-mapnik/tarball/master",
+    "mapnik" : "https://github.com/mapnik/node-mapnik/tarball/upgrade-opt-in",
     "srs":"~1.1.0",
     "gdal":"~0.8.0",
     "preprocessorcerer": "https://github.com/mapbox/preprocessorcerer/tarball/master",
