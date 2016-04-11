@@ -47,3 +47,7 @@ script:
  - npm dedupe
  - npm test
 
+notifications:
+  slack:
+    secure: LIF6zeIxEJtZKPIAconswMC3D0nrCiH/5kIUVZWJxW1o32YrnMUNXEFhOf740sKQtcU8uDXurss6yKKU/24D1pXPpXt/+QG1WT5+vq3AejcE46FXdbOhcjAukuBxCohiOuwiyJmmGaFDsH4NQ9nA0ROWRjF3wSi/fclik6zFpLQ=
+
