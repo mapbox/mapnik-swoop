@@ -31,6 +31,7 @@
     "tilelive-omnivore": "https://github.com/mapbox/tilelive-omnivore/tarball/master",
     "raster-tile-query": "https://github.com/mapbox/raster-tile-query/tarball/master",
     "spritezero": "https://github.com/mapbox/spritezero/tarball/master",
+    "sphericalmercator": "https://github.com/mapbox/node-sphericalmercator/tarball/negative-y",
     "mapbox-upload-validate": "https://github.com/mapbox/mapbox-upload-validate/tarball/master"
   }, 
   "devDependencies": {
