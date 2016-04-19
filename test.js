@@ -4,13 +4,6 @@ var path = require('path');
 var package_json = require('./package.json');
 var existsSync = require('fs').existsSync || require('path').existsSync;
 
-var cmd_path = path.join(__dirname,'../bin/');
-var sep = ':';
-if (process.platform === 'win32') {
-    sep = ';'
-}
-process.env.PATH = cmd_path + sep + process.env.PATH;
-process.env.NODE_PATH = path.join(__dirname,'../lib/');
 // Avoid need for extra s3 creds: https://github.com/mapbox/tilelive-vector/pull/116
 process.env.TILELIVE_VECTOR_NO_AUTH = "true";
 
