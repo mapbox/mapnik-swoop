@@ -14,7 +14,7 @@
     "mapnik" : "https://github.com/mapnik/node-mapnik/tarball/master",
     "srs":"~1.1.0",
     "gdal":"~0.8.0",
-    "preprocessorcerer": "https://github.com/mapbox/preprocessorcerer/tarball/stderr-fix",
+    "preprocessorcerer": "https://github.com/mapbox/preprocessorcerer/tarball/mapnik-index-test",
     "mapnik-reference" : "https://github.com/mapnik/mapnik-reference/tarball/gh-pages",
     "blend" : "https://github.com/mapbox/node-blend/tarball/master",
     "abaculus" : "https://github.com/mapbox/abaculus/tarball/master",
