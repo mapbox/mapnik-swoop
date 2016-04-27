@@ -16,6 +16,8 @@ this script exists is that we want to:
 
 Anyone have better ideas of how to do this?
 
+TODO: try `npm update`: https://docs.npmjs.com/cli/update
+
 '
 for i in $(ls node_modules/); do
   (
