@@ -1,12 +1,11 @@
-language: cpp
-
-sudo: false
+language: generic
 
 matrix:
   include:
     - os: osx
       env: NODE_NVM_VERSION="0.10.38"
     - os: linux
+      sudo: false
       env: NODE_NVM_VERSION="4"
       addons:
         apt:
@@ -15,6 +14,7 @@ matrix:
           packages:
            - libstdc++6
     - os: linux
+      sudo: false
       env: NODE_NVM_VERSION="0.10.38"
       addons:
         apt:
