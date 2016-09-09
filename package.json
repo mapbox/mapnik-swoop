@@ -13,7 +13,7 @@
   "dependencies": {
     "mapnik" : "https://github.com/mapnik/node-mapnik/tarball/master",
     "srs":"~1.1.0",
-    "gdal":"~0.8.0",
+    "gdal":"~0.9.3",
     "preprocessorcerer": "https://github.com/mapbox/preprocessorcerer/tarball/master",
     "mapnik-reference" : "https://github.com/mapnik/mapnik-reference/tarball/gh-pages",
     "blend" : "https://github.com/mapbox/node-blend/tarball/master",
