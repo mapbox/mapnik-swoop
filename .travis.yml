@@ -6,6 +6,15 @@ matrix:
       env: NODE_NVM_VERSION="0.10.38"
     - os: linux
       sudo: false
+      env: NODE_NVM_VERSION="6"
+      addons:
+        apt:
+          sources:
+           - ubuntu-toolchain-r-test
+          packages:
+           - libstdc++6
+    - os: linux
+      sudo: false
       env: NODE_NVM_VERSION="4"
       addons:
         apt:
