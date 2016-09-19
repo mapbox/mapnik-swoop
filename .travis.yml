@@ -48,12 +48,7 @@ before_install:
 install:
  - npm install --fallback-to-build=false
 
-# npm ls breaks on node 4?
-#before_script:
- #- npm ls
-
 script:
- - npm dedupe
  - npm test
 
 notifications:
