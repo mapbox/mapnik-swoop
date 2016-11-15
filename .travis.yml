@@ -14,6 +14,26 @@ matrix:
           packages:
            - libstdc++6
     - os: linux
+      dist: trusty
+      sudo: false
+      env: NODE_NVM_VERSION="4"
+      addons:
+        apt:
+          sources:
+           - ubuntu-toolchain-r-test
+          packages:
+           - libstdc++6
+    - os: linux
+      dist: trusty
+      sudo: required
+      env: NODE_NVM_VERSION="4"
+      addons:
+        apt:
+          sources:
+           - ubuntu-toolchain-r-test
+          packages:
+           - libstdc++6
+    - os: linux
       sudo: false
       env: NODE_NVM_VERSION="4" NPM_FLAGS="--debug"
       addons:
