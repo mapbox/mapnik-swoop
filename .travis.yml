@@ -37,7 +37,7 @@ before_install:
  - npm --version
 
 install:
- - npm install --fallback-to-build=false ${NPM_FLAGS} --loglevel=http
+ - npm install --fallback-to-build=false ${NPM_FLAGS}
 
 script:
  - npm test
