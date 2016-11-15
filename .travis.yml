@@ -13,6 +13,15 @@ matrix:
            - ubuntu-toolchain-r-test
           packages:
            - libstdc++6
+    - os: linux
+      sudo: false
+      env: NODE_NVM_VERSION="4" NPM_FLAGS="--debug"
+      addons:
+        apt:
+          sources:
+           - ubuntu-toolchain-r-test
+          packages:
+           - libstdc++6
 
 env:
   global:
@@ -28,7 +37,7 @@ before_install:
  - npm --version
 
 install:
- - npm install --fallback-to-build=false
+ - npm install --fallback-to-build=false ${NPM_FLAGS} --loglevel=http
 
 script:
  - npm test
