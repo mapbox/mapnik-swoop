@@ -3,7 +3,7 @@ language: generic
 matrix:
   include:
     - os: osx
-      env: NODE_NVM_VERSION="0.10.38"
+      env: NODE_NVM_VERSION="4"
     - os: linux
       sudo: false
       env: NODE_NVM_VERSION="6"
@@ -16,15 +16,6 @@ matrix:
     - os: linux
       sudo: false
       env: NODE_NVM_VERSION="4"
-      addons:
-        apt:
-          sources:
-           - ubuntu-toolchain-r-test
-          packages:
-           - libstdc++6
-    - os: linux
-      sudo: false
-      env: NODE_NVM_VERSION="0.10.38"
       addons:
         apt:
           sources:
