@@ -35,6 +35,7 @@ before_install:
  - nvm use $NODE_NVM_VERSION
  - node --version
  - npm --version
+ - if [[ $(uname -s) == 'Darwin' ]]; then sudo mdutil -i off /; fi;
 
 install:
  - npm install --fallback-to-build=false ${NPM_FLAGS}
