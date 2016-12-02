@@ -2,8 +2,6 @@ language: generic
 
 matrix:
   include:
-    - os: osx
-      env: NODE_NVM_VERSION="4"
     - os: linux
       sudo: false
       env: NODE_NVM_VERSION="4"
