@@ -19,14 +19,30 @@ Anyone have better ideas of how to do this?
 TODO: try `npm update`: https://docs.npmjs.com/cli/update
 
 '
-for i in $(ls node_modules/); do
-  (
-    cd node_modules/$i
-    DEVDEPS=$(node ../../get-dev-deps.js)
+
+DEVDEPS_SCRIPT=$(pwd)/get-dev-deps.js
+
+function build() {
+    DEVDEPS=$(node ${DEVDEPS_SCRIPT})
     if [[ ! $DEVDEPS == "" ]]; then
         echo "$(pwd):"
         echo "    installing '$DEVDEPS'"
         npm install $DEVDEPS
+    fi
+}
+
+for i in $(ls node_modules/); do
+  (
+    cd node_modules/$i
+    if [[ $i == '@mapbox' ]]; then
+        for j in $(ls ./); do
+        (
+            cd $j
+            build
+        )
+        done
+    else
+        build
     fi
   )
 done
