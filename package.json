@@ -20,7 +20,7 @@
     "abaculus" : "https://github.com/mapbox/abaculus/tarball/master",
     "tilelive-bridge": "https://github.com/mapbox/tilelive-bridge/tarball/master",
     "tilelive-mapnik": "https://github.com/mapbox/tilelive-mapnik/tarball/master",
-    "mapnik-omnivore": "https://github.com/mapbox/mapnik-omnivore/tarball/master",
+    "@mapbox/mapnik-omnivore": "https://github.com/mapbox/mapnik-omnivore/tarball/master",
     "vector-tile-query": "https://github.com/mapbox/vector-tile-query/tarball/master",
     "@mapbox/assert-http": "https://github.com/mapbox/assert-http/tarball/master",
     "landspeed": "https://github.com/mapbox/landspeed.js/tarball/master",
@@ -28,7 +28,7 @@
     "mapnik-pool": "https://github.com/mapbox/mapnik-pool/tarball/master",
     "geojson-mapnikify": "https://github.com/mapbox/geojson-mapnikify/tarball/master",
     "tilelive-overlay": "https://github.com/mapbox/tilelive-overlay/tarball/master",
-    "tilelive-omnivore": "https://github.com/mapbox/tilelive-omnivore/tarball/master",
+    "@mapbox/tilelive-omnivore": "https://github.com/mapbox/tilelive-omnivore/tarball/master",
     "raster-tile-query": "https://github.com/mapbox/raster-tile-query/tarball/master",
     "spritezero": "https://github.com/mapbox/spritezero/tarball/master",
     "mapbox-upload-validate": "https://github.com/mapbox/mapbox-upload-validate/tarball/master"
