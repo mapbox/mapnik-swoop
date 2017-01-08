@@ -15,6 +15,7 @@
     "srs":"~1.2.0",
     "gdal":"~0.9.3",
     "@mapbox/preprocessorcerer": "https://github.com/mapbox/preprocessorcerer/tarball/master",
+    "mapnik-reference" : "https://github.com/mapnik/mapnik-reference/tarball/gh-pages",
     "blend" : "https://github.com/mapbox/node-blend/tarball/master",
     "@mapbox/abaculus" : "https://github.com/mapbox/abaculus/tarball/master",
     "tilelive-bridge": "https://github.com/mapbox/tilelive-bridge/tarball/master",
