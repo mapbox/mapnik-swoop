@@ -13,14 +13,14 @@
     "mapnik-reference": "https://github.com/mapnik/mapnik-reference/tarball/gh-pages",
     "@mapbox/tilelive-overlay": "https://github.com/mapbox/tilelive-overlay/tarball/master",
     "@mapbox/assert-http": "https://github.com/mapbox/assert-http/tarball/master",
-    "@mapbox/preprocessorcerer": "https://github.com/mapbox/preprocessorcerer/tarball/master",
+    "@mapbox/preprocessorcerer": "https://github.com/mapbox/preprocessorcerer/tarball/mapnik-3.6.0",
     "@mapbox/mapnik-pool": "https://github.com/mapbox/mapnik-pool/tarball/master",
     "@mapbox/vector-tile-query": "https://github.com/mapbox/vector-tile-query/tarball/master",
     "@mapbox/mapbox-upload-validate": "https://github.com/mapbox/mapbox-upload-validate/tarball/master",
     "@mapbox/tilelive-omnivore": "https://github.com/mapbox/tilelive-omnivore/tarball/master",
     "srs": "~1.2.0",
     "@mapbox/spritezero": "https://github.com/mapbox/spritezero/tarball/master",
-    "@mapbox/mapnik-omnivore": "https://github.com/mapbox/mapnik-omnivore/tarball/master",
+    "@mapbox/mapnik-omnivore": "https://github.com/mapbox/mapnik-omnivore/tarball/mapnik-3.6.0",
     "mapnik": "https://github.com/mapnik/node-mapnik/tarball/master",
     "landspeed": "https://github.com/mapbox/landspeed.js/tarball/master",
     "@mapbox/tilelive-mapnik": "https://github.com/mapbox/tilelive-mapnik/tarball/master",
@@ -28,7 +28,7 @@
     "raster-tile-query": "https://github.com/mapbox/raster-tile-query/tarball/master",
     "blend": "https://github.com/mapbox/node-blend/tarball/master",
     "gdal": "~0.9.3",
-    "@mapbox/tilelive-bridge": "https://github.com/mapbox/tilelive-bridge/tarball/master"
+    "@mapbox/tilelive-bridge": "https://github.com/mapbox/tilelive-bridge/tarball/mapnik-3.6.0"
   },
   "scripts": {
     "postinstall": "./install-dev.sh",
