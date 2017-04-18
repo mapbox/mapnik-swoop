@@ -24,7 +24,7 @@ matrix:
 env:
   global:
    # MapboxAccessToken for tilelive-vector
-   - secure: "J6bryOYSIYMroBZdSdlg+zRRhHizJVoXsxhgA8qQrG0VSExga2AEOebarV0JbXNwHRP/fkZeFNAiag9ElAaj4GOMRoyuU3z4CNTqUPuVaghsYetn42NrzNnTIFRUlwOgHyTJACZPIwBWPLjPhRazBlJaF6EjOJbYhwSM7hdsHKo="
+   - secure: "jNEQjRfPmyo7vmcP06tpWR+eTXpHhhdJuwRsR0Am5IYz7mttisrRKLi1hd08wZSSP1SOpBH+BX30hP2e0J8VLmn7hNhWHWxZFe5/vM8Gmg6OSfvpKhxdekfptdxfsC5aX6yVDJmethlX980l9BagsyYvYcepii9aBx5Xr8WZC9M="
 
 before_install:
  - git clone https://github.com/creationix/nvm.git ../.nvm
