@@ -22,7 +22,6 @@
     "@mapbox/spritezero": "https://github.com/mapbox/spritezero/tarball/master",
     "@mapbox/mapnik-omnivore": "https://github.com/mapbox/mapnik-omnivore/tarball/master",
     "mapnik": "https://github.com/mapnik/node-mapnik/tarball/master",
-    "landspeed": "https://github.com/mapbox/landspeed.js/tarball/master",
     "@mapbox/tilelive-mapnik": "https://github.com/mapbox/tilelive-mapnik/tarball/master",
     "@mapbox/tilelive-vector": "https://github.com/mapbox/tilelive-vector/tarball/master",
     "raster-tile-query": "https://github.com/mapbox/raster-tile-query/tarball/master",
