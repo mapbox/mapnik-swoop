@@ -24,8 +24,8 @@
     "mapnik": "https://github.com/mapnik/node-mapnik/tarball/master",
     "@mapbox/tilelive-mapnik": "https://github.com/mapbox/tilelive-mapnik/tarball/master",
     "@mapbox/tilelive-vector": "https://github.com/mapbox/tilelive-vector/tarball/master",
-    "raster-tile-query": "https://github.com/mapbox/raster-tile-query/tarball/master",
-    "blend": "https://github.com/mapbox/node-blend/tarball/master",
+    "@mapbox/raster-tile-query": "https://github.com/mapbox/raster-tile-query/tarball/master",
+    "@mapbox/blend": "https://github.com/mapbox/node-blend/tarball/master",
     "gdal": "~0.9.3",
     "@mapbox/tilelive-bridge": "https://github.com/mapbox/tilelive-bridge/tarball/master"
   },
